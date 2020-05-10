@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+:root{
+    --gradient-content: linear-gradient(160deg, rgba(255,138,0,.9), rgba(218,27,96,.7));
+}
+html,body{
+    margin: 0;
+    background-color: #201c29;
+}
+section{
+    margin-top: 250px;
+    padding: 70px 100px 70px 100px;
+    background-image: var(--gradient-content);
+    min-height: 300px;
+}
+section h1{
+    color: white;
+    letter-spacing: 3px;
+}
+section p{
+    font-family: 
+}
+input[type=text]{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+    max-width: 250px;
+}
+select{
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+select,option{
+    color: #000;
+}
+i{
+    font-size: 1em;
+    margin: 0px 10px 0px 10px;
+    color: white;
+}
+button{
+    margin-left: 15px;
+    padding: 10px 15px;
+    background-color: #201c29;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+}

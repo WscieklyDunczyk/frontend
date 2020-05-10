@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --gradient-dark: linear-gradient(145deg, rgba(0,0,0,0), rgba(0,0,0,.40));
+    --gradient-dark2: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.90));
+    --gradient-light: linear-gradient(145deg, rgba(255,255,255,0), rgba(255,255,255,.5));
+}
+
+body{
+    background-color: #eee;
+    
+}
+.background{
+    margin: 15px 35px;
+    background-color: #fff;
+	padding-bottom: 35px;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    background-image: url(logo3.png);
+    background-size: cover;
+    float: left;
+    height: 60px;
+    width: 60px; 
+}
+.icon2{
+    background-image: url(logo4.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+header{
+    background-image: url(watch.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 82%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li p .logo{
+    font-size: 25px;
+    font-weight: 600;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 25px;
+    width: 125px;
+    transition: 0.8s;
+}
+.menu ul li a{
+    color: #daa520;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+}
+.menu ul li:hover{
+    background-color: #383e51;
+    background-image: var(--gradient-dark);
+}
+.menu ul li:hover a{
+    transition: 0.7s;
+    color: #fff;
+}
+
+.title{
+    border: 1px solid #fff;
+    padding: 45px 150px;
+    background-color: rgb(0,0,0,.1);
+    background-image: var(--gradient-dark2);
+}
+.title p{
+    font-size: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}
+section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(200px, auto);
+}
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section div h1{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.watch{
+    background-image: url('Canvas.png');
+    background-size: cover;
+    background-position: center;    
+}
+.phone{
+    background-size: cover;
+    background-position: center;
+}
+.laptop{
+    background-image: url(laptop.png);
+    background-size: cover;
+    background-position: 60% 50%;
+}
+@media only screen and (max-width: 600px){
+	.background{
+		margin: 0;
+		padding: 0;
+	}
+	.content{
+		width: 100%;
+	}
+	header{
+		height: 400px;
+		background-position: 50% 50%;
+	}
+	.title{
+		padding: 0;
+		border: none;
+		background-image: none;
+		background-color: rgb(0,0,0, .0);
+	}
+	.icon{
+		display: none;
+	}
+	.menu ul li{
+		width: 100%;
+		margin: 0;
+	}
+}
